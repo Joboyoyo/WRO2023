@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Random Squares</title>
+</head>
+<body>
+    <div class="left">
+        <div class="timer">
+            <h1 id="timer">00:00.0</h1>
+            <div class="button-group">
+                <button id="startPauseBtn" class="button green" onclick="startPauseTimer()">Start</button>
+                <button id="clearBtn" class="button red" onclick="resetTimer()">Clear</button>
+                <button class="button refresh" onclick="randomizeAll()">Refresh</button>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="box-row" id="box-row-1">
+            <div class="box"><div class="box-content"></div></div>
+            <div class="box"><div class="box-content"></div></div>
+            <div class="box"><div class="box-content"></div></div>
+            <div class="box"><div class="box-content"></div></div>
+        </div>
+        <div class="box-row" id="box-row-2">
+            <div class="box"><div class="box-content"></div></div>
+            <div class="box"><div class="box-content"></div></div>
+            <div class="box"><div class="box-content"></div></div>
+            <div class="box"><div class="box-content"></div></div>
+        </div>
+        <div class="number-box">
+            <h1 id="number">1</h1>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
